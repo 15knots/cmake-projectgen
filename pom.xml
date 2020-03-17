@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.marw.cmake</groupId>
+  <artifactId>cmake-projectgen</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <description>A utility to generate CMake projects for benchmarking of tools that analyse the compile_commands.json file.</description>
+  <url>https://github.com/15knots/cmake-projectgen</url>
+  <inceptionYear>2020</inceptionYear>
+  <licenses>
+    <license>
+      <name>Eclipse Public License v 2.0</name>
+      <comments>All rights reserved.
+
+       Content is provided to you under the terms and conditions of the Eclipse Public License Version 2.0 "EPL".
+       A copy of the EPL is available at http://www.eclipse.org/legal/epl-2.0.
+      </comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>15knots</name>
+      <email>fifteenknots505@gmail.com</email>
+      <roles>
+        <role>owner</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/15knots/cmake-projectgen</url>
+    <connection>scm:git:https://github.com/15knots/cmake-projectgen.git</connection>
+    <developerConnection>scm:git:https://github.com/15knots/cmake-projectgen.git</developerConnection>
+  </scm>
+  <issueManagement>
+    <url>https://github.com/15knots/cmake-projectgen/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+  </properties>
+</project>
