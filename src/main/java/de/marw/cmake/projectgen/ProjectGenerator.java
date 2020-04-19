@@ -302,20 +302,20 @@ public class ProjectGenerator {
             + " [-cD <number>] [-cI <number>] [-uD <number>] [-uI <number>] -o <output directory>%n",
         ProjectGenerator.class.getName());
     System.out.format("Options:%n");
-    System.out.format("  -n <number>:            number of source files to create (default %d)%n", DEFAULT_NumCmds);
+    System.out.format("  -n <number>            number of source files to create (default %d)%n", DEFAULT_NumCmds);
     System.out.format(
-        "  -p <percent>:           percentage of source files with unique preprocessor symbols%n"
-            + "                          and include path on the command line (default %d)%n",
+        "  -p <percent>           percentage of source files with unique preprocessor symbols%n"
+            + "                         and include path on the command line (default %d)%n",
         DEFAULT_PercentUniqueCmd);
-    System.out.format("  -cD <number>:           number of common preprocessor symbols per source file (default %d)%n",
+    System.out.format("  -cD <number>           number of common preprocessor symbols per source file (default %d)%n",
         DEFAULT_NumCommonDefsPerCmd);
-    System.out.format("  -cI <number>:           number of common include paths per source file (default %d)%n",
+    System.out.format("  -cI <number>           number of common include paths per source file (default %d)%n",
         DEFAULT_NumCommonInclpathsPerCmdDef);
-    System.out.format("  -uD <number>:           number of unique preprocessor symbols per source file (default %d)%n",
+    System.out.format("  -uD <number>           number of unique preprocessor symbols per source file (default %d)%n",
         DEFAULT_NumUniqueDefsPerCmd);
-    System.out.format("  -uI <number>:           number of unique include paths per source file (default %d)%n",
+    System.out.format("  -uI <number>           number of unique include paths per source file (default %d)%n",
         DEFAULT_NumUniqueInclpathsPerCmd);
-    System.out.format("  -o <output directory>:  directory where to create the project files%n");
+    System.out.format("  -o <output directory>  directory where to create the project files%n");
   }
 
   private static ProjectGenerator parseArgs(String[] args) {
@@ -429,7 +429,7 @@ public class ProjectGenerator {
         }
         break;
       default:
-        System.err.format("Unknown option `%s`%n", arg);
+        System.err.format("Invalid option `%s`%n", arg);
         return null; // error
       }
     }
