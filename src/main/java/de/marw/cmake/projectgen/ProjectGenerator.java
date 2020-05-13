@@ -205,7 +205,8 @@ public class ProjectGenerator {
       int numUniqueCommonDefs = commonMacros.size();
       int numUniqueCommonInclpaths = commonInclpaths.size();
       os.format("# Auto-generated project for CDT performance testing.%n");
-      os.format("# Generated with %s%n%n", ProjectGenerator.class.getName());
+      os.format("# Generated with %s%n", ProjectGenerator.class.getName());
+      os.format("#%n# Project site: %s%n%n", "https://github.com/15knots/cmake-projectgen");
       os.println("cmake_minimum_required(VERSION 2.8.12)");
 
       os.format("%n# This project has %,d source files, each to compile with%n", numFiles);
@@ -255,7 +256,7 @@ public class ProjectGenerator {
    */
   private void printEstimatedMemoryUsage(PrintStream os) {
     os.println("# ---------------------------------------------------------------------------");
-    os.println("# Estimated minimum JVM memory consuption");
+    os.println("# Estimated minimum JVM memory consumption");
     os.println("#");
     os.println("# After extracting the include paths and preprocessor symbols");
     os.println("# from the compile_command.json file and elimination of duplicate strings,");
